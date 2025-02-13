@@ -44,6 +44,8 @@ export default function Page() {
 }
 `.trim();
 
+export const runtime = "edge";
+
 export default function FetchDataSteps() {
   return (
     <ol className="flex flex-col gap-6">

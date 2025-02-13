@@ -3,6 +3,8 @@ import { ArrowUpRight, InfoIcon } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
+export const runtime = 'edge';
+
 export default async function ProtectedPage() {
   const supabase = await createClient();
 

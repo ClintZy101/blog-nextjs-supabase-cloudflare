@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
+export const runtime = 'edge';
+
 export default function Blogs() {
   const [blogs, setBlogs] = useState<any[] | null>(null);
   const [error, setError] = useState<string | null>(null);

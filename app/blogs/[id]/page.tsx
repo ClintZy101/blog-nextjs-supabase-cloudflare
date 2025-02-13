@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation'; // Use `useParams` instead of `useRouter`
 import { ArrowLeftIcon } from 'lucide-react';
 
+export const runtime = 'edge';
+
 export default function BlogPost() {
   const [blog, setBlog] = useState<any | null>(null);
   const [error, setError] = useState<string | null>(null);

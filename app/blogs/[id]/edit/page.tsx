@@ -6,6 +6,8 @@ import { useParams, useRouter } from "next/navigation";
 import { ArrowLeftIcon } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+export const runtime = "edge";
+
 export default function BlogPost() {
   const [blog, setBlog] = useState<any | null>(null);
   const [error, setError] = useState<string | null>(null);
